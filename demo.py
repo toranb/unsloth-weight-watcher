@@ -7,7 +7,9 @@ details = watcher.analyze(model='model',fix_fingers='clip_xmax')
 base_details = watcher.analyze(model='base',fix_fingers='clip_xmax')
 
 print(details.alpha.mean())
-details.to_csv('filename.csv', index=False)
+print(base_details.alpha.mean())
+details.to_csv('finetune.csv', index=False)
+base_details.to_csv('base_data.csv', index=False)
 
 details.alpha.plot.hist(bins=100, color='red', alpha=0.5, density=True, label='finetune')
 base_details.alpha.plot.hist(bins=100, color='green', density=True, label='mistral')
