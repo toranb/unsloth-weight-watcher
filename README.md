@@ -8,7 +8,7 @@ cd analyze
 python3 -m venv env
 source env/bin/activate
 pip install -r requirements.txt
-mkdir yolo
-# copy over model directory with full 7B mistral model
+# copy over model directory 7B mistral fine tune
+# copy over base directory 7B mistral base model
 python3 demo.py
 ```
