@@ -1,6 +1,6 @@
 Analyze Mistral 7B fine tuning with weight watcher
 
-### SFT with unsloth
+### Run after SFT with unsloth
 
 ```
 git clone git@github.com:toranb/unsloth-weight-watcher.git analyze
